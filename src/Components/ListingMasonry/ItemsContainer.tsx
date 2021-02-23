@@ -13,7 +13,7 @@ import Img13 from "../../img/Carousel-images/13.jpg";
 import Img14 from "../../img/Carousel-images/14.jpg";
 import { Link } from "react-router-dom";
 
-//
+// //
 export let data = [
     { "name": "Pizza", "item": "Da Alfredo", "address": "27 Old Gloucester st", "rating": "8.9", "img": Img1 },
     { "name": "Burghers", "item": "Best Burghers", "address": "27 Old Gloucester st", "rating": "9.5", "img": Img4 },
@@ -44,7 +44,10 @@ function ItemsContainer(props: any) {
                         {/* <small>{props.data.storeName}</small> */}
                         <div className="item_title">
                             <h3>{storeName}</h3>
-                            <h3 className="pt-1">{searchCategory}</h3>
+                            <h3 className="pt-1">{searchCategory.map((cname:any) =>{
+                                /*eslint no-unused-expressions: ["error", { "allowShortCircuit": true }]*/
+                                return (cname["categoryName"] + " ,")
+                            })}</h3>
                             <small>{address}</small>
                         </div>
                     </Link>

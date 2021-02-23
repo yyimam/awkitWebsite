@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React from "react";
 // import OrderSum from "./OrderSum";
 import ItalianImg from "../../img/home-small-img/italian-small-img.png";
 import MexicanImg from "../../img/home-small-img/mexican-small-img.png";
@@ -7,14 +7,12 @@ import VegiImg from "../../img/home-small-img/vegi-small-img.png";
 import ItalianPizza from "../../img/home-small-img/pizza-small-image.png";
 import Cake from "../../img/home-small-img/cake.jpg";
 import Custard from "../../img/home-small-img/custard.jpg";
-import Profilterolese from "../../img/home-small-img/Profilteroles.jpg";
+// import Profilterolese from "../../img/home-small-img/Profilteroles.jpg";
 import Drink from "../../img/home-small-img/drink.jpg"
 import Beer from "../../img/home-small-img/beer.jpg"
 import Wine from "../../img/home-small-img/red-wine.jpg"
 import WhiteWine from "../../img/home-small-img/white-wine.jpg"
-import CartModal from "./CartModal";
-import { event } from "jquery";
-import { useQuery, gql, useLazyQuery } from '@apollo/client';
+
 
 // import CartModal from "./CartModal";
 // require("react-bootstrap/ModalHeader")

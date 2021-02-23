@@ -1,52 +1,10 @@
-import React, { Component, Fragment, useEffect } from "react"
+import React, { Fragment } from "react"
 import { connect } from "react-redux";
 import { MyMapComponent } from "../OrderTracking/OrderTrackingMap";
 import { store } from "../store";
-import ItemsContainer, { data } from "./ItemsContainer";
-import { useQuery, gql, useLazyQuery } from '@apollo/client';
+import ItemsContainer from "./ItemsContainer";
+import { useQuery, gql } from '@apollo/client';
 import ReactLoading from "react-loading";
-
-
-
-// interface Props {
-// 	reduxGraphData: any
-// }
-
-// interface MyState {
-// 	someString: string,
-// 	loading: boolean
-// }
-
-// const query = gql`
-// query ($limit: Int, $page: Int, $zipCode: Int, $storeType: String){
-//     getStore(limit: $limit, page:$page, zipCode:$zipCode, storeType:$storeType){
-//         _id
-//         storeType
-//         storeName
-//         zipCode
-//         rating
-//         storeWorkingTimeHourly
-//         storeWorkingTimeWeekly
-//         shortDescription
-//         longDescription
-//         imgSmall
-//         imgBig
-//         logo
-//         deliveryType
-//         address
-//         phoneNumber
-//         contactPerson
-//         coords {
-//           lat
-//           long
-//         }
-//         searchCategory
-//         saved
-//         updated
-//         pickUp
-//     }
-//   }
-// `
 
 const query =gql`
 query ($limit: Int, $page: Int, $_id: String) {
@@ -55,6 +13,10 @@ query ($limit: Int, $page: Int, $_id: String) {
 			_id
 			storeType
 			storeName
+			subCategory{
+			  subCategoryName
+			  subCategorySlug
+			}
 			storeNameSlug
 			storeWorkingTimeHourly
 			storeWorkingTimeWeekly
@@ -67,34 +29,52 @@ query ($limit: Int, $page: Int, $_id: String) {
 			address
 			phoneNumber
 			contactPerson
-			searchCategory
+			coords{
+			  lat
+			  long
+			}
+			searchCategory{
+			  _id
+			  categoryName
+			  categoryNameSlug
+			}
+			saved
+			updated
+			productID{
+			  _id
+			  productName
+			  productSlug
+			  productMainCategorySlug
+			  productCategoryLevel1{
+				_id
+				name
+			  }
+			  productDescriptionLong
+			  productDescriptionShort
+			  productImgSmall
+			  productImgLarge
+			  caseSoldOut
+			  StoreID
+			  storeName
+			  createUserID
+			  productAdditionalID{
+				_id
+				categoryName
+				selectUpto
+				selectionType
+				confirmSelection
+				categoryItems{
+				  itemName
+				  price
+				}
+			   
+			  }
+			  createUserID
+			  updated
+			}
+			pickUp
 			rating
 			zipCode
-		  productID{
-		  _id
-		  productMainCategorySlug
-		  productCategoryLevel1
-		  productDescriptionLong
-		  productImgSmall
-		  productImgLarge
-		  caseSoldOut
-		  StoreID
-		  storeName
-		  productName
-		  productAdditionalID{
-		  _id
-		  categoryName
-		  selectUpto
-		  selectionType
-		  confirmSelection
-		  categoryItems{
-			itemName
-			price
-		  }
-		  saved
-		}
-		  }
-			
 		  }
 		  totalItem
 		limit
@@ -122,7 +102,7 @@ const ListMasonry = (props) => {
 	const { data, loading, error, refetch } = useQuery(query, {
 		variables: { "limit": 20, "page": 1, "zipCode": +zipCode, "storeType": storeType },
 	})
-console.log("deta",data);
+// console.log("deta",data);
 
 
 	return loading ? (<Fragment> <div style={{ display: "flex", alignItems: "center", justifyContent: "center", marginTop: "20%" }}><ReactLoading type={"spin"} color={"tomato"} className="spin-123" /></div></Fragment>) : (
@@ -155,7 +135,8 @@ console.log("deta",data);
 							<ul className="clearfix">
 								<li>
 									<label className="container_radio" style={{ border: "none" }}>All
-						            <input type="radio" name="type_d" value="all" id="all" checked data-filter="*" className="selected" />
+						            <input type="radio" name="type_d" value="all" id="all"  data-filter="*" className="selected" />
+									{/* checked */}
 										<span className="checkmark"></span>
 									</label>
 								</li>

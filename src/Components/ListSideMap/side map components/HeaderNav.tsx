@@ -35,16 +35,10 @@ class HeaderNav extends Component<any, any> {
 
     render() {
         // store.subscribe(this.handleChange)
-
         // console.log("data","");
-
         //    this.setState({"dClass" : });
-
         // const [dClass, setdClass] = useState("header black_nav clearfix element_to_stick ");
         return (
-            // <Router>
-            // header black_nav clearfix element_to_stick           home
-            // header header_in clearfix                            other pages
             <header className={this.state.dClass} style={{ background: "rgb(43, 43, 43)" }}>
                 <div className="container">
                     <div id="logo">
