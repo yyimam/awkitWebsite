@@ -1,0 +1,309 @@
+.mainPage123 {
+  margin: 0% !important;
+  padding: 0% !important;
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-size: 14px !important;
+  background-color: whitesmoke !important;
+  background-image: url(./images/bgBottom.png), url(./images/bgTop.png) !important;
+  background-position: right bottom, left top !important;
+  background-repeat: no-repeat, no-repeat !important;
+  background-size: 40% !important;
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+.eeeeeeeerror {
+  color: red;
+}
+
+@font-face {
+  font-family: cooperblack;
+  src: url(./font/COOPBL.ttf);
+}
+
+.maaain_divvv {
+  margin: 0px 20% !important;
+  /* margin-right: 20% !important; */
+}
+
+.heaaader123 {
+  padding-top: 50px;
+  text-align: right !important;
+  font-style: italic !important;
+}
+
+.heaaader123 span {
+  cursor: pointer !important;
+}
+
+.heaaader123 .signinnnnn a {
+  text-decoration: none !important;
+  color: black !important;
+  padding: 5px 10px !important;
+  border-radius: 10px !important;
+  border: 1px solid transparent !important;
+}
+
+.heaaader123 .signinnnnn a:hover {
+  color: tomato !important;
+  border: 1px solid tomato !important;
+}
+
+.heaaader123 .signuuuup a {
+  background-color: tomato !important;
+  color: white !important;
+  padding: 5px 10px !important;
+  border: 1px solid transparent !important;
+  border-radius: 10px !important;
+  margin-left: 20px !important;
+}
+
+.heaaader123 .signuuuup a :hover {
+  background-color: white !important;
+  color: tomato !important;
+  border: 1px solid tomato !important;
+}
+
+/* <!-- ///////// FIND FODD DIV ///////////// --> */
+
+.findFoooood_div123 {
+  margin: 200px 35% 0px 0% !important;
+}
+
+.paaaage_heading123 h1 {
+  font-size: 78px !important;
+  font-weight: 500 !important;
+  font-family: "cooperblack" !important;
+  text-align: left !important;
+}
+
+/* <!-- ///////// RADIO BUTTONS DIV ///////////// --> */
+/* 
+.raaaadio_btns123 {
+  display: flex !important;
+  margin-top: 20px !important;
+}
+
+.raaaadio_btns123 .r_btn123 {
+  margin-right: 70px !important;
+  font-size: small !important;
+} */
+
+/* input[type="radio"]:after {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 15px !important;
+  top: -2px !important;
+  left: -1px !important;
+  position: relative !important;
+  background-color: #d1d3d1 !important;
+  content: "" !important;
+  display: inline-block !important;
+  visibility: visible !important;
+  border: 2px solid white !important;
+}
+
+input[type="radio"]:checked:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: tomato;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+} */
+
+/* <!-- ///////// SEARCH LOCATION DIV ///////////// --> */
+
+.seaaaarch_loc123 {
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 60px !important;
+  margin: 10px 0px !important;
+  box-sizing: border-box !important;
+  margin-top: 50px !important;
+}
+
+.seaaaarch_loc123 .drp_dwnnnn123 {
+  flex: 2 !important;
+  background-color: tomato !important;
+  color: white !important;
+  justify-content: center !important;
+  height: 100% !important;
+  border-top-left-radius: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  cursor: pointer !important;
+}
+
+.seaaaarch_loc123 .drp_dwnnnn123 h4 {
+  color: white !important;
+}
+
+.seaaaarch_loc123 .drp_dwnnnn123 .fa-caret-down {
+  margin-right: 10px !important;
+}
+
+.seaaaarch_loc123 .srch_innnnp123 {
+  flex: 5 !important;
+  background-color: red !important;
+  height: 100% !important;
+}
+
+.seaaaarch_loc123 input {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0px 10px !important;
+  border: none !important;
+  outline: none !important;
+  font-size: 16px !important;
+}
+
+.seaaaarch_loc123 .src_icnnnn_div123 {
+  flex: 1 !important;
+  height: 100% !important;
+}
+
+.seaaaarch_loc123 .spaceeee {
+  width: 5px !important;
+  /* background-color: transparent !important; */
+}
+
+.seaaaarch_loc123 .iconnnnn_srch123 {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0px 20px !important;
+  background-color: white !important;
+  height: 100% !important;
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  cursor: pointer !important;
+}
+
+/* <!-- ///////// FONT ICON DIV ///////////// --> */
+
+.fontIcon_div123 {
+  display: flex !important;
+  width: 100% !important;
+  margin-top: 10% !important;
+  justify-content: spaceeee-between !important ;
+}
+
+.fontIcon_div123 ._icon123 {
+  width: 80% !important;
+  background-color: tomato !important;
+  padding: 20px 35px !important ;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  margin-right: 5% !important;
+}
+.fontIcon_div123 ._icon123 button {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+.fontIcon_div123 ._icon123 .img_div123 {
+  height: 90% !important;
+}
+.fontIcon_div123 ._icon123 .img_div123 img {
+  width: 100% !important;
+}
+.fontIcon_div123 ._icon123 p {
+  color: white !important;
+  text-align: center !important;
+}
+
+@media only screen and (max-width: 700px) {
+  .mainPage123 {
+    background-size: 50% !important;
+    height: 94vh !important;
+  }
+
+  .maaain_divvv {
+    margin: 50px 5% !important;
+  }
+
+  .heaaader123 .signinnnnn a {
+    padding: 2px 5px !important;
+  }
+
+  .heaaader123 .signuuuup a {
+    padding: 2px 5px !important;
+    margin-left: 10px !important;
+  }
+
+  .seaaaarch_loc123 .drp_dwnnnn123 h4 {
+    color: white !important;
+    font-size: x-small !important;
+  }
+  .findFoooood_div123 {
+    margin: 100px 5% 0px 5% !important;
+  }
+
+  .paaaage_heading123 h1 {
+    font-size: 28px !important;
+  }
+
+  .raaaadio_btns123 {
+    display: flex !important;
+    margin-top: 25px !important;
+  }
+
+  .raaaadio_btns123 .r_btn123 {
+    margin-right: 10px !important;
+    font-size: x-small !important;
+  }
+
+  .seaaaarch_loc123 {
+    height: 30px !important;
+  }
+
+  .seaaaarch_loc123 .drp_dwnnnn123 {
+    font-size: xx-small !important;
+    text-align: center !important;
+    padding: 0px 5px !important;
+  }
+
+  .seaaaarch_loc123 .drp_dwnnnn123 .fa-caret-down {
+    margin-right: 5px !important;
+  }
+
+  .seaaaarch_loc123 input {
+    font-size: 10px !important;
+  }
+
+  .fontIcon_div123 {
+    display: flex !important;
+    width: 100% !important;
+    margin-top: 20% !important;
+    justify-content: spaceeee-between !important;
+  }
+
+  .fontIcon_div123 ._icon123 {
+    width: 25% !important;
+    background-color: tomato !important;
+    padding: 5% 5% !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    margin-right: 5% !important;
+  }
+
+  .fontIcon_div123 ._icon123 .img_div123 {
+    height: 80% !important;
+  }
+  .fontIcon_div123 ._icon123 .img_div123 img {
+    width: 100% !important;
+  }
+  .fontIcon_div123 ._icon123 p {
+    color: white !important;
+    text-align: center !important;
+    font-size: xx-small !important;
+  }
+}

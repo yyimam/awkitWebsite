@@ -1,0 +1,69 @@
+{
+    "product": [
+        {
+            "name": "main productname",
+            "product_id": "sfasdfd",
+            "store_name": "any StoreName",
+            "extra_instructions":"",
+            "if_sold_out":"Refund this item",
+            "additionals": [
+                {
+                    "headName": "Select Size",
+                    "items": [
+                        {
+                            "name": "Mediam",
+                            "price": 268.69
+                        }
+                    ]
+                },
+                {
+                    "headName": "Select Side",
+                    "items": [
+                        {
+                            "name": "French Fries",
+                            "price": 268.69
+                        },
+                        {
+                            "name": "Boiled Egg",
+                            "price": 268.69
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "main productname",
+            "product_id": "sfasdfd",
+            "store_name": "any StoreName",
+            "additional_details":"",
+            "if_sold_out":"Refund this item",
+            "additionals": [
+                {
+                    "headName": "Select Size",
+                    "items": [
+                        {
+                            "additional_id": "",
+                            "name": "Mediam",
+                            "price": 268.69
+                        }
+                    ]
+                },
+                {
+                    "headName": "Select Side",
+                    "items": [
+                        {
+                            "additional_id": "",
+                            "name": "French Fries",
+                            "price": 268.69
+                        },
+                        {
+                            "additional_id": "",
+                            "name": "Boiled Egg",
+                            "price": 268.69
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

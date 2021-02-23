@@ -1,0 +1,98 @@
+{
+    "vegi": [
+        {
+            "name": "lady finger", "price": "$5.00"
+        },
+        {
+            "name": "onion", "price": "$4.00"
+        },
+        {
+            "name": "potatos", "price": "$4.50"
+        },
+        {
+            "name": "tomatos", "price": "$4.50"
+        },
+        {
+            "name": "garlic", "price": "$2.00"
+        },
+        {
+            "name": "Green Peas", "price": "$6.00"
+        },
+        {
+            "name": "Carrots", "price": "$2.50"
+        }
+
+    ],
+    "snacks": [
+        {
+            "name": "Cheestos", "img": "", "price": "$5.00"
+        },
+        {
+            "name": "Crinkle Chips", "img": "", "price": "$4.00"
+        },
+        {
+            "name": "Lays", "img": "", "price": "$4.50"
+        },
+        {
+            "name": "Wavy", "img": "", "price": "$4.50"
+        },
+        {
+            "name": "Snack5", "img": "", "price": "$2.00"
+        },
+        {
+            "name": "snack6", "img": "", "price": "$6.00"
+        },
+        {
+            "name": "snack7", "img": "", "price": "$2.50"
+        }
+
+    ],
+    "oilSauce": [
+        {
+            "name": "ketchup", "img": "", "price": "$15.00"
+        },
+        {
+            "name": "mayo", "img": "", "price": "$10.00"
+        },
+        {
+            "name": "chilli Sauce", "img": "", "price": "$9.50"
+        },
+        {
+            "name": "winegar", "img": "", "price": "$8.50"
+        },
+        {
+            "name": "Soya Sauce", "img": "", "price": "$6.00"
+        },
+        {
+            "name": "chicken spread", "img": "", "price": "$20.00"
+        },
+        {
+            "name": "chicken mayo", "img": "", "price": "$15.50"
+        }
+
+    ],
+    "drinks": [
+        {
+            "name": "7up", "img": "", "price": "$2.00"
+        },
+        {
+            "name": "Sprite", "img": "", "price": "$2.00"
+        },
+        {
+            "name": "Beer", "img": "", "price": "$10.50"
+        },
+        {
+            "name": "Pepsi", "img": "", "price": "$1.50"
+        },
+        {
+            "name": "Coca Cola", "img": "", "price": "$1.50"
+        },
+        {
+            "name": "Wine", "img": "", "price": "$20.00"
+        },
+        {
+            "name": "Beer Cane","img": "", "price": "$8.50"
+        }
+
+    ]
+}
